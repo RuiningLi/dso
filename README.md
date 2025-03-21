@@ -15,6 +15,38 @@
 
 <!-- Installation -->
 ## 📦 Installation
+1. Install the [TRELLIS](https://trellis3d.github.io/) dependencies:
+
+```sh
+conda create -n dso python=3.10
+conda activate dso
+pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu124
+. ./setup.sh --basic --xformers --flash-attn --diffoctreerast --spconv --mipgaussian --kaolin --nvdiffrast
+```
+
+If you run into issues, please consult the [installation guide](https://github.com/Microsoft/TRELLIS?tab=readme-ov-file#-installation).
+
+2. Install the remaining dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+## 🤖 Pretrained Models
+
+We provide two checkpoints, one trained with the [direct preference optimization](https://arxiv.org/abs/2311.12908) (DPO) and the other trained with our introduced **direct reward optimization** (DRO).
+
+## 📊 Evaluation
+
+
+## ⚙️ Training
+
+```sh
+# This runs on 4 NVIDIA A100s 80GB GPUs.
+
+CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --multi_gpu --num_processes 4 --mixed_precision bf16 finetune.py --config configs/dpo.yaml 
+```
+
 
 
 ```bibtex

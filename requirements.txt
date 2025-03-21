@@ -1,0 +1,7 @@
+accelerate
+diffusers
+wandb
+omegaconf
+mujoco
+open3d
+peft
