@@ -395,7 +395,6 @@ FodyWeavers.xsd
 *.msp
 
 *.glb
-*.png
 
 # JetBrains Rider
 *.sln.iml
