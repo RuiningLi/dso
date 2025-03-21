@@ -9,9 +9,9 @@
 
 <!-- Overview -->
 ## 🌟 Overview
-- A state-of-the-art image-to-3D model like TRELLIS often *fails* to reconstruct 3D objects that can stand under gravity, even when prompted with images of stable objects.
-- Our method, *DSO*, improves the image-to-3D model via *D*irect *S*imulation *O*ptimization, significantly increasing the likelihood that generated 3D objects can stand, both in physical simulation and in real life when 3D printed.
-- The method *incurs no additional cost at test time* and thus generate such objects *in seconds*.
+- A state-of-the-art image-to-3D model like TRELLIS often **fails** to reconstruct 3D objects that can stand under gravity, even when prompted with images of stable objects.
+- Our method, **DSO**, improves the image-to-3D model via **D**irect **S**imulation **O**ptimization, significantly increasing the likelihood that generated 3D objects can stand, both in physical simulation and in real life when 3D printed.
+- The method **incurs no additional cost at test time** and thus generate such objects **in seconds**.
 
 <!-- Installation -->
 ## 📦 Installation
