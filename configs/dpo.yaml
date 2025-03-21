@@ -1,0 +1,35 @@
+exp_name: dso-with-direct-preference-optimization
+output_dir: "./runs"
+dataset_dir: "./data"
+category: "objaverse-renderings"
+dataset_kwargs: 
+  stable_threshold: 20
+  num_images_per_prompt: 6
+  num_models_per_image: 4
+  sample_from_all_multiviews: true
+
+batch_size: 6
+learning_rate: 5.e-6
+lr_warmup_steps: 2000
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_weight_decay: 0.01
+max_train_steps: 8000
+max_grad_norm: 1.0
+gradient_accumulation_steps: 2
+
+flow_matching_t_logit_normal_mu: 1.0
+flow_matching_t_logit_normal_sigma: 1.0
+dpo_beta: 500.0
+
+log_interval: 10
+ckpt_interval: 2000
+seed: 0
+logger_type: "wandb"
+
+use_lora: true
+lora_r: 64
+lora_alpha: 128
+lora_dropout: 0.0
+
+use_dpo: true

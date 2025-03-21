@@ -1,0 +1,5 @@
+image_paths: ./image-to-3D-eval-stability-under-gravity/motorcycle-eval/*.jpg  # Or: ./image-to-3D-eval-stability-under-gravity/clock-eval/*.jpg
+ckpt_path: /home/ruiningli/TRELLIS/runs/objaverse-ablations-dro_2025-03-05T19-19-11/checkpoint-0004000/model.safetensors
+sample_dir: ./samples/motorcycle_samples
+num_models_per_image: 1
+naming_level: 1

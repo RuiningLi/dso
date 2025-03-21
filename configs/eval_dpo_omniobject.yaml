@@ -1,0 +1,18 @@
+# image_paths: /mnt/disks/data/physics-gen-eval/clock-eval/*.jpg
+# image_paths: /mnt/disks/data/flux-images/clock/0003[3-5]/*.jpg
+# image_paths: /mnt/disks/data/sim-DPO/clock/00003/*.jpg
+
+image_paths: [
+  "/mnt/disks/data/omniobject3d___OmniObject3D-New/raw/blender_renders_24_views/img/clock_016/003.png",
+  "/mnt/disks/data/omniobject3d___OmniObject3D-New/raw/blender_renders_24_views/img/clock_022/023.png",
+  "/mnt/disks/data/omniobject3d___OmniObject3D-New/raw/blender_renders_24_views/img/clock_041/016.png",
+  "/mnt/disks/data/omniobject3d___OmniObject3D-New/raw/blender_renders_24_views/img/clock_044/022.png",
+  "/mnt/disks/data/omniobject3d___OmniObject3D-New/raw/blender_renders_24_views/img/clock_051/010.png",
+  "/mnt/disks/data/omniobject3d___OmniObject3D-New/raw/blender_renders_24_views/img/clock_060/022.png"
+]
+
+ckpt_path: /home/ruiningli/TRELLIS/runs/clock-1000prompt-10image-16models-bestuni20-beta2000-ctnd_2025-01-10T14-34-29/checkpoint-0050000/model.safetensors
+sample_dir: ./samples/clock-eval-1000prompt-10image-16models-bestuni20-beta2000-50000iters-omniobject
+# sample_dir: ./samples/original
+num_models_per_image: 10
+naming_level: 2
