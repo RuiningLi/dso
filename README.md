@@ -124,7 +124,7 @@ python evaluation/evaluate_geometry.py --mesh_paths "./samples/objaverse_samples
 
 1. Generate synthetic training data.
 
-First, generate a set of images saved with this structure:
+First, generate / obtain a set of images saved with this structure:
 ```sh
 📁 category/
 |--- 📁 prompt1/
