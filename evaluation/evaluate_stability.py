@@ -174,6 +174,7 @@ if __name__ == "__main__":
     parser.add_argument("--mesh_paths", type=str, required=True)
     parser.add_argument("--up_dir", type=str, default="y", choices=["x", "y", "z"])
     parser.add_argument("--num_workers", type=int, default=None)
+    parser.add_argument("--stable_threshold", type=int, default=20)
     args = parser.parse_args()
 
     mesh_paths = sorted(glob(args.mesh_paths))
@@ -182,4 +183,4 @@ if __name__ == "__main__":
     print("Successfully processed ", len(angles), " meshes")
     angles = np.array(angles)
     print("Average Rotation Angle at Equilibrium: ", angles.mean())
-    print("Percentage Stable: ", (angles > 20).mean())
+    print("Percentage Unstable: ", (angles > args.stable_threshold).mean())
