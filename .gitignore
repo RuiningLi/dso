@@ -404,6 +404,7 @@ samples
 wandb
 runs
 image-to-3D-eval-stability-under-gravity
+DSO-finetuned-TRELLIS
 
 *.xml
 

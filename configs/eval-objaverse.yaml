@@ -1,0 +1,5 @@
+image_paths: ./image-to-3D-eval-stability-under-gravity/objaverse/*/*.png
+ckpt_path: /home/ruiningli/code_release/dso/runs/dso-with-direct-preference-optimization_2025-03-21T16-15-58/checkpoint-0008000/model.safetensors
+sample_dir: ./samples/objaverse_samples
+num_models_per_image: 1
+naming_level: 2
