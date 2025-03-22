@@ -122,11 +122,41 @@ python evaluation/evaluate_geometry.py --mesh_paths "./samples/objaverse_samples
 
 ## ⚙️ Training
 
+1. Generate synthetic training data.
+
+First, generate a set of images saved with this structure:
+📁 category/
+├── 📁 prompt1/
+│   ├── image1.png
+│   ├── image2.png
+│   └── ...
+├── 📁 prompt2/
+│   ├── image1.png
+│   ├── image2.png
+│   └── ...
+├── ...
+
+Then, generate the 3D models conditioned on these images:
+
+```sh
+python -m data_preprocessing.generate_synthetic_data --num_samples 4 --save_extra --output_dir /path/to/data/root --image_paths "/path/to/the/above/dir/*/*/*.png"
+```
+
+Finally, augment the 3D models with simulation feedback and save their physical soundness score:
+
+```sh
+python -m data_preprocessing.augment_with_simulation_feedback --root_dir /path/to/data/root --num_models_per_image 4
+```
+
+2. Launch the training job:
+
 ```sh
 # This runs on 4 NVIDIA A100s 80GB GPUs.
 
 CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch --multi_gpu --num_processes 4 --mixed_precision bf16 finetune.py --config configs/dpo.yaml 
 ```
+
+Note you need to specify the data directory in the configuration file.
 
 ## Citation
 
