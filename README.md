@@ -126,14 +126,23 @@ python evaluation/evaluate_geometry.py --mesh_paths "./samples/objaverse_samples
 
 First, generate a set of images saved with this structure:
 📁 category/
+
 ├── 📁 prompt1/
+
 │   ├── image1.png
+
 │   ├── image2.png
+
 │   └── ...
+
 ├── 📁 prompt2/
+
 │   ├── image1.png
+
 │   ├── image2.png
+
 │   └── ...
+
 ├── ...
 
 Then, generate the 3D models conditioned on these images:
