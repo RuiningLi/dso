@@ -1,6 +1,6 @@
 <h1 align="center">DSO: Aligning 3D Generators with Simulation Feedback for Physical Soundness</h1>
 <p align="center">
-<a href="https://arxiv.org/abs/2503.xxxxx"><img src="https://img.shields.io/badge/arXiv-2503.xxxxx-b31b1b" alt="arXiv"></a>
+<a href="https://arxiv.org/abs/2503.xxxxx"><img src="https://img.shields.io/badge/arXiv-2503.22677-b31b1b" alt="arXiv"></a>
 <a href="https://ruiningli.com/dso"><img src="https://img.shields.io/badge/Project_Page-green" alt="Project Page"></a>
 <a href='https://huggingface.co/datasets/rayli/image-to-3D-eval-stability-under-gravity'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Evaluation%20Dataset-blue'></a>
 </p>
@@ -166,7 +166,7 @@ Note you need to specify the data directory in the configuration file.
 @article{li2025dso,
     title   = {DSO: Aligning 3D Generators with Simulation Feedback for Physical Soundness},
     author  = {Li, Ruining and Zheng, Chuanxia and Rupprecht, Christian and Vedaldi, Andrea},
-    journal = {arXiv preprint arXiv:2503.xxxxx},
+    journal = {arXiv preprint arXiv:2503.22677},
     year    = {2025}
 }
 ```
