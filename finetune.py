@@ -31,8 +31,6 @@ torch.autograd.set_detect_anomaly(True)
 
 logger = get_logger(__name__, log_level="INFO")
 
-os.environ["WANDB_API_KEY"] = "ce1816bb45de1fc10f92c8bc17f2d7cc9b1a8757"
-
 
 def create_logging(logging, logger, accelerator):
     logging.basicConfig(
